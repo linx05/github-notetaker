@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true, // this is the best starting point
+    "browser": true, // for react web
+    "es6": true, // enables es6 features
+    "react-native/react-native": true
+  },
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "rules": {
+    // overrides
+    "semi": ["error", "never"],
+    "react/jsx-filename-extension": 0
+  }
+}
